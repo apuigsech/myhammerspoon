@@ -20,6 +20,7 @@ KEYMODE_1 = {
 
 local wm_modes = {}
 wm_modes["1440x900"] = KEYMODE_0
+wm_modes["1512x982"] = KEYMODE_0
 wm_modes["2560x1440"] = KEYMODE_0
 wm_modes["5120x1440"] = KEYMODE_1
 
