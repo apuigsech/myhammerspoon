@@ -4,45 +4,40 @@ hs.window.animationDuration = 0
 hs.grid.setGrid("4x2")
 hs.grid.setMargins({0, 0})
 
-
-local screenPositions       = {}
-
-screenPositions.left    = {
-  x = 0, y = 0,
-  w = 1, h = 2
+This.screenPositions = {
+  left = {
+    x = 0, y = 0,
+    w = 1, h = 2
+  },
+  midleft = {
+    x = 1, y = 0,
+    w = 1, h = 2
+  },
+  midright = {
+    x = 2, y = 0,
+    w = 1, h = 2
+  },
+  right = {
+    x = 3, y = 0,
+    w = 1, h = 2
+  },
+  fullleft = {
+    x = 0, y = 0,
+    w = 2, h = 2  
+  },
+  fullmid = {
+    x = 1, y = 0,
+    w = 2, h = 2
+  },
+  fullright = {
+    x = 2, y = 0,
+    w = 2, h = 2
+  },
+  fullscreen = {
+    x = 0, y = 0,
+    w = 4, h = 2
+  }
 }
-screenPositions.midleft    = {
-  x = 1, y = 0,
-  w = 1, h = 2
-}
-screenPositions.midright    = {
-  x = 2, y = 0,
-  w = 1, h = 2
-}
-screenPositions.right  = {
-  x = 3, y = 0,
-  w = 1, h = 2
-}
-screenPositions.fullmid    = {
-  x = 1, y = 0,
-  w = 2, h = 2
-}
-
-screenPositions.fullleft    = {
-  x = 0, y = 0,
-  w = 2, h = 2
-}
-screenPositions.fullright    = {
-  x = 2, y = 0,
-  w = 2, h = 2
-}
-
-screenPositions.fullscreen    = {
-  x = 0, y = 0,
-  w = 4, h = 2
-}
-
-This.screenPositions = screenPositions
 
 function This.moveWindowToPosition(cell, window)
   if window == nil then
